@@ -1,5 +1,9 @@
 # Taproot × Kokoro
 
+
+https://github.com/user-attachments/assets/4065d4c7-d8d9-45c3-bd01-80e4c6b022c0
+
+
 This repository shows an example of how to interact with a Taproot cluster running Kokoro-TTS directly from the browser for absurdly fast end-to-end speech synthesis, delivering ready-to-play 48KHz audio to the browser in as little as 50 milliseconds.
 
 # Installation
