@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Turbokoro</title>
+        <!-- Cloud assets -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Meie+Script&family=Lekton:ital,wght@0,400&display=swap" rel="stylesheet">
+        <!-- Local assets -->
+        <script src="taproot.min.js"></script>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <h1>Turbokoro</h1>
+            <h2><a href="https://huggingface.co/hexgrad/Kokoro-82M" target="_blank">Kokoro-82M</a> &times; <a href="https://github.com/painebenjamin/taproot" target="_blank">Taproot</a></h2>
+        </header>
+        <section id="input">
+            <label for="voice">Voice</label>
+            <select id="voice" name="voice">
+                <option value="male.en.us.adam" selected>Adam (U.S.)</option>
+                <option value="female.en.us.bella">Bella (U.S.)</option>
+                <option value="female.en.gb.emma">Emma (U.K.)</option>
+                <option value="male.en.gb.george">George (U.K.)</option>
+                <option value="female.en.gb.isabella">Isabel (U.K.)</option>
+                <option value="male.en.gb.lewis">Lewis (U.K.)</option>
+                <option value="male.en.us.michael">Michael (U.S.)</option>
+                <option value="female.en.us.nicole">Nicole (U.S.)</option>
+                <option value="female.en.us.sarah">Sarah (U.S.)</option>
+                <option value="female.en.us.sky">Skye (U.S.)</option>
+            </select>
+            <label for="text">Text</label>
+            <textarea id="text" placeholder="Enter your text here" rows=16 maxlength=65535></textarea>
+            <input type="button" id="submit" value="Submit" disabled />
+        </section>
+        <section id="output">
+            <div id="audio"></div>
+            <div id="latency">no output yet</div>
+        </section>
+        <footer>
+            <ul>
+                <li>Kokoro-82M trained by <a href="https://discord.gg/QuGxSWBfQy" target="_blank">@rzvzn on Discord</a>, licensed under <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache 2.0</a>.</li>
+                <li>Model architecture based on StyleTTS2 by <a href="https://huggingface.co/yl4579">Yinghao Aaron Li (@yl4579)</a>, licensed under <a href="https://opensource.org/license/mit" target="_blank">MIT</a>.</li>
+                <li>Phonemization by <a href="https://github.com/espeak-ng/espeak-ng" target="_blank">eSpeak NG</a>, licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GPL-3.0</a>.</li>
+                <li>Taproot inference engine by <a href="https://github.com/painebenjamin" target="_blank">Benjamin Paine</a>, licensed under <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache 2.0</a>.</li>
+            </ul>
+        </footer>
+    </body>
+    <script type="module" src="index.js"></script>
+</html>

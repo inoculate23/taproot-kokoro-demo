@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+	padding: 0;
+    margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Arial", sans-serif;
+    background-color: rgb(11,15,25);
+    color: white;
+    gap: 10px;
+}
+
+header {
+    text-align: left;
+    width: 100%;
+    max-width: 640px;
+}
+
+h1 {
+	font-size: 28px;
+	margin: 0;
+}
+
+h2 {
+    font-size: 14px;
+    margin: 0;
+}
+
+p {
+	font-size: 15px;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+strong, em, a {
+    color: #16c8ce;
+}
+
+section {
+    width: 100%;
+	max-width: 640px;
+	margin: 0 auto;
+	padding: 16px;
+	border: 1px solid rgb(107, 114, 128);
+	border-radius: 16px;
+	background-color: rgb(16, 22, 35);
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+}
+
+input, textarea, select {
+    padding: 8px;
+    border: 1px solid rgb(107, 114, 128);
+    border-radius: 8px;
+    background-color: rgb(16, 22, 35);
+    color: white;
+}
+
+input[type="submit"],
+input[type="button"] {
+    border-color: #16c8ce;
+    background-color: #187f83;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: transparent;
+    color: #16c8ce;
+}
+
+input[type="submit"]:disabled,
+input[type="button"]:disabled {
+    background-color: #8f8f8f;
+    color: rgb(107, 114, 128);
+    border-color: #8f8f8f;
+    cursor: not-allowed;
+}
+
+label {
+    display: block;
+    width: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    transform: translateY(10px) translateX(10px);
+    background-color: rgb(16, 22, 35);
+}
+
+#output {
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
+}
+
+#output * {
+    width: 100%;
+}
+
+footer {
+    text-align: right;
+    width: 100%;
+    max-width: 640px;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+footer ul li {
+    font-size: 10px;
+    margin-bottom: 4px;
+}
