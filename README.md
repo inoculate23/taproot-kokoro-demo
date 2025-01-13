@@ -28,6 +28,8 @@ taproot install speech-synthesis:kokoro --optional
 
 *This command also installs `deepfilternet` (`libdf`) for speech upsampling with the `--optional` flag.*
 
+***Note:** deepfilternet requires `rust` on Python 3.12 and up.*
+
 ## Step 3 - Clone Repository
 
 ```
