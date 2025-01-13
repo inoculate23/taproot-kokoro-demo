@@ -10,6 +10,8 @@ This repository shows an example of how to interact with a Taproot cluster runni
 
 This assumes you have `node.js` and `python` installed. For GPU usage, you will need to have a working CUDA toolkit.
 
+If you don't have it already, you also need to install [espeak-ng](https://github.com/espeak-ng/espeak-ng). The easiest way to do this is to install `espeak-ng` using your system's package manager (`yum`, `apt`, `pacman`). See [here](https://github.com/espeak-ng/espeak-ng/blob/master/docs/guide.md) for complete instructions.
+
 ## Step 1 - Install Taproot
 
 ```sh
