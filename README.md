@@ -15,10 +15,10 @@ If you don't have it already, you also need to install [espeak-ng](https://githu
 ## Step 1 - Install Taproot
 
 ```sh
-pip install taproot[uv,av]
+pip install taproot[uv,av,ws]
 ```
 
-*This command also includes `uv` for speed (linux only) and `av` for audio codecs.*
+*This command also includes `uv` for speed (linux only), `ws` for websocket communication and `av` for audio codecs.*
 
 ## Step 2 - Install Kokoro
 
@@ -56,7 +56,7 @@ npm start
 In another window, run Taproot like so:
 
 ```sh
-taproot overseer --local
+taproot overseer ws://127.0.0.1:32189 --local --executor-protocol ws
 ```
 
 You can now access the demo at `http://localhost:3000`.
